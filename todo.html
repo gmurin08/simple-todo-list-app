@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Gino Murin, HTML, CSS, JavaScript, Portfolio, graphic design, web design, website builder, web developer, web designer, webdesign, website creator, responsive web design">
+        <meta name="author" content="Gino Murin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <link rel="preload" href="todo-styles/style.css" as="style">
+        <title>WHAT TO-DO</title>
+        <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.png"/>
+        <link href="todo-styles/style.css?v=2.3" rel="stylesheet">
+
+        <meta property="og:title" content="Check out my todo web app" />
+        <meta property="og:type" content="website" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo_container">
+
+            </div>
+            <div class="container">
+                <img class="logo_img" src="./assets/list.png">
+                <h1 class="header__title">WHAT TO-DO</h1>
+                <h2 class="header__subtitle">Let's Get It Done!</h2>
+            </div>
+        </header>
+
+        <div class="actions">
+            <div class="actions__container">
+                <input id="filter" class="input" placeholder="Search todos">
+                <label class="checkbox">
+                    <input id="hide-completed" type="checkbox"> Hide completed
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="todos"></div>
+            <div id="input-container">
+            <form id="new-todo">
+                <div class="flex-input flex-input--text">
+                    <input type="text" class="input input--mobile" placeholder="Add todo" name="text">
+                </div>
+                <div class="flex-input flex-input--button">
+                    <button class="button button--add-todo">Add todo</button>
+                </div>
+            </form>
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
+        <script src="todo-scripts/todo-functions.js?v1"></script>
+        <script src="todo-scripts/todo-app.js"></script>
+    </body>
+</html>
